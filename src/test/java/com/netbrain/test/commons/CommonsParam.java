@@ -1,8 +1,6 @@
 package com.netbrain.test.commons;
 
-import java.util.HashMap;
 import java.util.Map;
-
 import com.netbrain.test.util.ParamTool;
 
 /**
