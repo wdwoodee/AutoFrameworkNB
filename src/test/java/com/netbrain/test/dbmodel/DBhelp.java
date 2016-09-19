@@ -7,7 +7,7 @@ import com.netbrain.test.util.DataPrepare;
  *
  * 2016年9月12日下午8:41:21
  */
-public class DBhelp {
+public class DBHelp {
 	public static String getTenantGuid(){
 		return DataPrepare.getStringRandom(8)+"-"+DataPrepare.getStringRandom(4)+"-"+DataPrepare.getStringRandom(4)+"-"+DataPrepare.getStringRandom(4)+"-"+DataPrepare.getStringRandom(12);
 	}
