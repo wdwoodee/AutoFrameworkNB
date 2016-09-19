@@ -3,6 +3,7 @@ package com.netbrain.test.util;
 import java.util.HashMap;
 import java.util.Map;
 
+
 /**
  * @author gaohuan
  *
@@ -22,8 +23,22 @@ public class ParamTool {
 	/*
 	 * 
 	 */
-	public static Map<String,Object>createTanent_param(){
+	public static Map<String,Object>createTanent_param(String tenantGuid,String tenantName){
 		Map<String,Object>mapprams=new HashMap<String,Object>();
-		return null;
+		Map<String, Object> mapparms = new HashMap<String, Object>();
+		Map<String, Object> mapparms1 = new HashMap<String, Object>();
+		mapparms1.put("ID", tenantGuid);
+		mapparms1.put("name", tenantName);
+		mapparms1.put("description", "This is the default automation tenant");
+		mapparms1.put("dbName", tenantName);		
+		mapparms1.put("nodeSize", "1000");
+		mapparms1.put("maxSeat", "100");
+		mapparms1.put("reserveSeat", "0");
+		Map<String, Object> mapparms2 = new HashMap<String, Object>();
+		
+		
+		return mapparms;
+		
+		
 	}
 }
