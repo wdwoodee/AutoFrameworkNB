@@ -51,7 +51,11 @@ public class LoginTest extends TestBase{
 		}
 	}
 	
-	
+	@Test
+	public void createTenent(){
+		logger.info("[TESTCASE]-" +Thread.currentThread().getStackTrace()[1].getMethodName());
+		
+	}
 	
 	
 	

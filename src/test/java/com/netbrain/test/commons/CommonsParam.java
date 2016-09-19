@@ -11,5 +11,5 @@ import com.netbrain.test.util.ParamTool;
 public class CommonsParam {
 	public static Map<String,Object>getloginParm(){		
 		return ParamTool.login_param();
-	}
+	}	
 }

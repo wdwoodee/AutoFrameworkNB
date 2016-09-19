@@ -18,4 +18,12 @@ public class ParamTool {
 		mapparms.put("scope", "system");
 		return mapparms;
 	}
+	
+	/*
+	 * 
+	 */
+	public static Map<String,Object>createTanent_param(){
+		Map<String,Object>mapprams=new HashMap<String,Object>();
+		return null;
+	}
 }
