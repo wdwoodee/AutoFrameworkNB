@@ -53,14 +53,15 @@ public class DBConnUtil {
 	/**query data from database
 	 * 
 	 * @param collection_name
-	 * @param ob
+	 * @param document 为查询条件
+	 * @param  document_projection为只返回需要的字段
 	 * @return
 	 * crud method please see http://mongodb.github.io/mongo-java-driver/3.0/driver/getting-started/quick-tour/
 	 */
 	
 	@SuppressWarnings("unchecked")
 	public FindIterable<Document> queryData(String collection_name,Bson document,int flag){
-		
+		//collection_name为要查询的collection名字
 		MongoCollection<Document> coll = db.getCollection(collection_name);
 		
 		if(flag==0){
@@ -86,15 +87,17 @@ public class DBConnUtil {
 		
 		MongoCollection<Document> coll = db.getCollection(collection_name);
 		if(flag==0){
+			//0 代表查询所有
 		cursor=coll.find(document).projection(document_projection);
 		}
 		
 		else if(flag==1){
+			//1 代表只查询一条数据
 			cursor=(FindIterable<Document>) coll.find(document).projection(document_projection).first();
 		}
 		
 		else if(flag==2){
-			
+			//2 代表没有查询条件
 			cursor=coll.find().projection(document_projection);
 		}
         return cursor;
@@ -120,6 +123,9 @@ public class DBConnUtil {
 	/**
 	 * 
 	 * update data to database
+	 * 
+	 * filter 通过此filter过滤需要更新的数据
+	 * update 需要更新的内容
 	 * 
 	 * crud method please see http://mongodb.github.io/mongo-java-driver/3.0/driver/getting-started/quick-tour/
 	 */
@@ -149,6 +155,7 @@ public class DBConnUtil {
 	 * 
 	 * remove data from database
 	 * 
+	 * filter 通过此filter去过滤需要删除的数据
 	 * crud method please see http://mongodb.github.io/mongo-java-driver/3.0/driver/getting-started/quick-tour/
 	 */
 	
