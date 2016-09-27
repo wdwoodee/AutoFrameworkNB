@@ -7,8 +7,10 @@ package com.auto.test.basedata;
  */
 public interface DBConfig {
 
-	public final static String mongo_ip="10.10.4.213";
-	public final static int mongo_port=27017;
+	public final static String mongo_ip="10.10.5.247";
+	public final static int mongo_port=27019;
 	public final static String mongo_dbname="test_api";
-	
+	public final static String Tenant="Tenant";
+	public final static String Tenant_name="0913";
+	public final static String NGSystem="NGSystem";
 }

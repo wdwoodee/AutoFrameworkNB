@@ -13,4 +13,10 @@ public class CommonsParam {
 	public static Map<String,Object>getloginParm(){		
 		return ParamTool.login_param();
 	}	
+	
+	
+	public static Map<String,Object> getsearchParm(){
+		
+		return ParamTool.createSearch_param();
+	}
 }

@@ -28,7 +28,7 @@ public class GetAccessToken extends TestBase{
 		JsonNode node;
     	try{
     		node=objectMapper.readTree(login_result);
-    		Access_token=node.get("access_token").toString();
+    		Access_token=node.get("access_token").asText();
     		
     		
     	}catch (JsonProcessingException e) {
