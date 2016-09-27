@@ -29,11 +29,12 @@ public class SearchTest extends TestBase{
     		node=objectMapper.readTree(login_result);
     		//access_token=node.get("access_token").asText();
     		//token_type=node.get("token_type").asText();
-    		System.out.println("%%%%%%%%%%%%%%%%"+node);
-    		System.out.println("%%%%%%%%%%%%%%%%"+node.get("operationResult").get("ResultCode").toString());
     		
+    		int ResultCode=node.get("operationResult").get("ResultCode").asInt();
+    		String ResultDesc=node.get("operationResult").get("ResultDesc").asText();
     		
-    	//	Assert.assertEquals("Bearer",token_type);
+    		Assert.assertEquals(0,ResultCode);
+    		Assert.assertEquals("Operation Successful ",ResultDesc);
     	}catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
