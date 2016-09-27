@@ -53,6 +53,7 @@ public class ParamTool {
 		Map<String,Object> mapprams=new LinkedHashMap<String,Object>();
 		mapprams.put("prefix", "sea");
 		mapprams.put("count", 10);
+		int [] aa=new int[]{0,1,2,3,4,5,6,7,8,9};
 		ArrayList<Integer>test=new ArrayList<Integer>();
 		test.add(0);
 		test.add(1);
@@ -64,7 +65,7 @@ public class ParamTool {
 		test.add(7);
 		test.add(8);
 		test.add(9);
-		mapprams.put("types",test);
+		mapprams.put("types",aa);
 		return mapprams;
 		
 		

@@ -23,13 +23,14 @@ public class SearchTest extends TestBase{
   public void search() {
 	  
 	  logger_search.info("[TESTCASE]-" +Thread.currentThread().getStackTrace()[1].getMethodName());
-	  String login_result=HttpRequest.doPostFormWithHeader(url_Search, CommonsParam.getsearchParm(), CommonsHeader.getcommonHeader(), "utf-8");
+	  String login_result=HttpRequest.doPostBody(url_Search, CommonsParam.getsearchParm(), CommonsHeader.getcommonHeader(), "utf-8");
 		JsonNode node;
     	try{
     		node=objectMapper.readTree(login_result);
     		//access_token=node.get("access_token").asText();
     		//token_type=node.get("token_type").asText();
-    		System.out.println(node.get("operationResult").get("ResultCode").toString());
+    		System.out.println("%%%%%%%%%%%%%%%%"+node);
+    		System.out.println("%%%%%%%%%%%%%%%%"+node.get("operationResult").get("ResultCode").toString());
     		
     		
     	//	Assert.assertEquals("Bearer",token_type);
