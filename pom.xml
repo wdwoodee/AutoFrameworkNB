@@ -288,6 +288,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>res/${xmlFileName}</suiteXmlFile>
                     </suiteXmlFiles>
+                     <skipTests>true</skipTests>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
