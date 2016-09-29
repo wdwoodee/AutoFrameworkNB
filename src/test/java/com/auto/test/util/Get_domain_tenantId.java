@@ -21,6 +21,7 @@ public class Get_domain_tenantId implements DBConfig{
 	
 	ArrayList<String> dot=new ArrayList<String>();
 	
+	
 	public Get_domain_tenantId(){
 		
 		DBConnUtil dbConnUtil=new DBConnUtil(mongo_ip,mongo_port,NGSystem);
