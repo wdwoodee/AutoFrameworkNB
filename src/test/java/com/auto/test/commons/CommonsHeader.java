@@ -13,5 +13,9 @@ public class CommonsHeader {
 	public static Map<String, String> getloginHeader(){
 		return Hearder.getLoginheader();
 	}
-	
+	public static Map<String,String> getcommonHeader(){
+		
+		return Hearder.getheader();
+		
+	}
 }

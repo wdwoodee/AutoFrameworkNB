@@ -8,11 +8,10 @@ package com.auto.test.basedata;
  * edit by luozt 
  */
 public interface Config {
-	public final static String ipUrl="http://10.10.4.110";
+	public final static String ipUrl="http://10.10.5.248";
 	public final static String baseUrl="/netbrain.webservices";
 	public final static String login="/GenerateAccessToken";
+	public final static String GetSearchPrefix="/Search/BasicSearch/GetSearchPrefix";
+	public final static String DoFullSearch="/Search/BasicSearch/DoFullSearch";
 	
-	public final static String mongo_ip="10.10.4.213";
-	public final static int mongo_port=27017;
-	public final static String mongo_dbname="test_api";
 }

@@ -1,6 +1,8 @@
 package com.auto.test.util;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 
@@ -38,6 +40,22 @@ public class ParamTool {
 		
 		
 		return mapparms;
+		
+		
+	}
+	
+	
+	/**
+	 * 
+	 */
+	public static Map<String,Object> createSearch_param(){
+		
+		Map<String,Object> mapprams=new LinkedHashMap<String,Object>();
+		mapprams.put("prefix", "sea");
+		mapprams.put("count", 10);
+		int [] aa=new int[]{0,1,2,3,4,5,6,7,8,9};
+		mapprams.put("types",aa);
+		return mapprams;
 		
 		
 	}

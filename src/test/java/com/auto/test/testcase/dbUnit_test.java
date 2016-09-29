@@ -3,8 +3,7 @@ package com.auto.test.testcase;
 import java.util.ArrayList;
 
 import org.bson.Document;
-
-import com.auto.test.basedata.Config;
+import com.auto.test.basedata.DBConfig;
 import com.auto.test.dbmodel.DBConnUtil;
 import com.mongodb.Block;
 import com.mongodb.client.FindIterable;
@@ -15,7 +14,7 @@ import com.mongodb.client.FindIterable;
  * @author luozt  
  * @date 2016年9月19日  新建  
  */
-public class dbUnit_test implements Config{
+public class dbUnit_test implements DBConfig{
 
 	
 	String collection_name="test_api";
