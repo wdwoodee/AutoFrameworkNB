@@ -32,11 +32,11 @@ public class createRandomId {
 		return sb.toString();
 	}
 	
-	public static void main(String[] args){
-		
-		createRandomId cr=new createRandomId();
-		System.out.print(cr.getRandomId());
-	}
+//	public static void main(String[] args){
+//		
+//		createRandomId cr=new createRandomId();
+//		System.out.print(cr.getRandomId());
+//	}
 	
 	
 }
