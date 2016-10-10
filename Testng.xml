@@ -7,6 +7,7 @@
     </classes>
   </test> <!-- Default test -->
   
+  
   <test verbose="2" name="Default test1">
     <classes>
       <class name="com.auto.test.testcase.LoginTest"/>
