@@ -299,7 +299,7 @@
                     </systemPropertyVariables>
                     <suiteXmlFiles>
                         <!--<suiteXmlFile>res/${xmlFileName}</suiteXmlFile>-->
-                        <suiteXmlFile>Testng</suiteXmlFile>
+                        <suiteXmlFile>Testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                      <skipTests>false</skipTests>
                     <testFailureIgnore>true</testFailureIgnore>
