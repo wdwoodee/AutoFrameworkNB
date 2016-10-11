@@ -291,12 +291,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.19.1</version>
                 <configuration>
-                    <systemPropertyVariables>
+                   <!-- <systemPropertyVariables>
                         <testEnv>${testEnv}</testEnv>
                         <project>${project}</project>
-                    </systemPropertyVariables>
+                    </systemPropertyVariables> -->
                     <suiteXmlFiles>
                         <!--<suiteXmlFile>res/${xmlFileName}</suiteXmlFile>-->
                         <suiteXmlFile>Testng.xml</suiteXmlFile>
