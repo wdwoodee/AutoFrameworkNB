@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3274" started-at="2016-10-09T12:42:41Z" finished-at="2016-10-09T12:42:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3233" started-at="2016-10-09T12:42:41Z" finished-at="2016-10-09T12:42:45Z">
+      <class name="com.auto.test.testcase.SearchTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="beforeTest" is-config="true" duration-ms="10" started-at="2016-10-09T20:42:41Z" finished-at="2016-10-09T20:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:41Z" finished-at="2016-10-09T20:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:41Z" finished-at="2016-10-09T20:42:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="search()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="search" duration-ms="3213" started-at="2016-10-09T20:42:41Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.auto.test.testcase.SearchTest@69536370]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.auto.test.testcase.SearchTest -->
+    </test> <!-- Default test -->
+    <test name="Default test1" duration-ms="31" started-at="2016-10-09T12:42:45Z" finished-at="2016-10-09T12:42:45Z">
+      <class name="com.auto.test.testcase.LoginTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="createTenent()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="createTenent" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTenent -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="loginTest" duration-ms="30" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.auto.test.testcase.LoginTest@30e72b6c]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-10-09T20:42:45Z" finished-at="2016-10-09T20:42:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.auto.test.testcase.LoginTest -->
+    </test> <!-- Default test1 -->
+  </suite> <!-- Default suite -->
+</testng-results>
