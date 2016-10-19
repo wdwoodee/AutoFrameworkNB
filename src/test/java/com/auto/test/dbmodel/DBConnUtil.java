@@ -1,11 +1,14 @@
 package com.auto.test.dbmodel;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
 import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.ServerAddress;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -25,6 +28,8 @@ public class DBConnUtil {
 	public  String ip;
 	public  int port;
 	public  String dbname;
+	String username;
+	String passwd;
 	MongoClient mongoClient;
 	MongoDatabase db;
 	FindIterable<Document> cursor=null;
@@ -32,20 +37,24 @@ public class DBConnUtil {
 	long delete_count=0;
 	
 	
-	public DBConnUtil(String ip,int port,String dbname){
+	public DBConnUtil(String ip,int port,String dbname,String username,String passwd){
 		
 		this.ip=ip;
 		this.port=port;
 		this.dbname=dbname;	
-		
+		this.username=username;
+		this.passwd=passwd;
 	}
 	
 	
 	public MongoDatabase  conn()
 	   {
-		 mongoClient = new MongoClient(ip , port );
+		 MongoCredential credential = MongoCredential.createScramSha1Credential(username,"admin",passwd.toCharArray());
+		 ServerAddress addr = new ServerAddress(ip, port);  
+		 mongoClient = new MongoClient(addr,Arrays.asList(credential));
 		 db = mongoClient.getDatabase(dbname);
-		
+		 
+		 
 		 return db;
 		
 	   }

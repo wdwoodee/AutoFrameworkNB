@@ -19,7 +19,7 @@ public class dbUnit_test implements DBConfig{
 	
 	String collection_name="test_api";
 	
-	public static void main(String[] args) {
+	public static void main (String[] args) {
 		// TODO Auto-generated method stub
 		dbUnit_test test=new dbUnit_test();
 	}
@@ -27,7 +27,7 @@ public class dbUnit_test implements DBConfig{
 	
 	public dbUnit_test(){
 		
-		DBConnUtil dbhelp=new DBConnUtil(mongo_ip,mongo_port,mongo_dbname);
+		DBConnUtil dbhelp=new DBConnUtil(mongo_ip,mongo_port,mongo_dbname,username,passwd);
 		dbhelp.conn();
 		
 		

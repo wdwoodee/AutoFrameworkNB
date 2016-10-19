@@ -24,7 +24,7 @@ public class Get_domain_tenantId implements DBConfig{
 	
 	public Get_domain_tenantId(){
 		
-		DBConnUtil dbConnUtil=new DBConnUtil(mongo_ip,mongo_port,NGSystem);
+		DBConnUtil dbConnUtil=new DBConnUtil(mongo_ip,mongo_port,NGSystem,username,passwd);
 		dbConnUtil.conn();
 		Document query_document=new Document("name",Tenant_name);
 		FindIterable<Document> iterable=dbConnUtil.queryData(Tenant, query_document, 0);
