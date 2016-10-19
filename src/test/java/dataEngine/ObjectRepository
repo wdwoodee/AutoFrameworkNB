@@ -1,0 +1,9 @@
+# Home Page Objects
+Userbar_login=//*[@id='OSC_Userbar']/a[1]
+Userbar_logout=span[title='admin']
+
+#Login Page Objects
+Input_name=input[placeholder='User Name']
+Input_password=input[type='password']
+Login_button=button[class='login-btn-main']
+logout_button=/html/body/div[1]/div[1]/div/div/ul/li[3]/ul/li[10]/a
