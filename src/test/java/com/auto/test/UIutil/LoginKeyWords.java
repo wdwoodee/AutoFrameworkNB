@@ -1,12 +1,15 @@
 package com.auto.test.UIutil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
 
 
 public class LoginKeyWords {
-	public static WebDriver driver=null;
+	
+	// DesiredCapabilities capability = null;
+	static EventFiringWebDriver driver;
 	
 //	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static void OpenBrowser (String OR){
@@ -15,8 +18,15 @@ public class LoginKeyWords {
 		try {
 	//		System.setProperty("webdriver.chrome.driver", Contants.driverUrl);
 	//		System.setProperty("webdriver.firefox.bin", "D:/firfox/firefox.exe");
-			driver= new FirefoxDriver();
-			driver.manage().window().maximize();
+	//		driver= new FirefoxDriver();
+	//		driver.manage().window().maximize();
+			 WebDriver webdriver=new FirefoxDriver();
+			 driver=new EventFiringWebDriver(webdriver);
+			MyEventListener handle=new MyEventListener();
+			driver.register(handle);
+			 
+	
+		
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -29,7 +39,11 @@ public class LoginKeyWords {
 
 //	ï¿½ò¿ª¿ï¿½Ô´ï¿½Ð¹ï¿½ï¿½ï¿½Ö·
 	public static void Navigate (String OR){
+		
 		driver.get(Contants.url);
+		
+		
+//		driver.get(Contants.url);
 //		WebElement username=driver.findElement(By.cssSelector("input[placeholder='User Name']"));
 //		
 //		username.clear();
