@@ -17,6 +17,7 @@ public class CompareCSV {
 	/**
 	 * 
 	 * 读取csv
+	 * add
 	 */
 	public static final String ENCODE="UTF-8";
 	
