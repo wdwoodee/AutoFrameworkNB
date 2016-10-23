@@ -19,6 +19,7 @@ public class CompareCSV {
 	 * 读取csv
 	 */
 	public static final String ENCODE="UTF-8";
+	
 	ArrayList<String[]> csvList=new ArrayList<String[]>();
 	
     public ArrayList<String[]> readCsv(String csvPath){
