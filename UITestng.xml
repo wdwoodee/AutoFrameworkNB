@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+  <listeners>
+        <listener class-name="retry.RetryListener"/>
+        <listener class-name="retry.TestResultListener"/>
+        <listener class-name="retry.PowerEmailableReporter"/>
+  </listeners>
+
+  <test verbose="2" name="Default test">
+
+    <classes>
+      <class name="UIutil.testExamlpe"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

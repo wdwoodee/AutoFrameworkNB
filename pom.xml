@@ -15,6 +15,13 @@
   </properties>
 
    <dependencies>
+   
+   
+      <dependency>
+    <groupId>com.thoughtworks.qdox</groupId>
+    <artifactId>qdox</artifactId>
+    <version>1.9.2</version>
+</dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
       <dependency>
          <groupId>org.apache.poi</groupId>
